@@ -40,8 +40,8 @@ plot(c(lon[1], lon[nlon]), c(lat[1], lat[nlat]),
      ylim = c(lat_bnds[1] - dlat_dot, lat_bnds[nlat+1] + dlat_max),
      xaxt = 'n', yaxt = 'n',
      bty = 'n', type = 'n')
-axis(1, at = c(0, 360))
-axis(2, at = c(0, 360))
+axis(1, at = c(0, 360), lwd = 2)
+axis(2, at = c(0, 360), lwd = 2)
 mtext('longitude', 1, line = +1.2, cex = 2)
 mtext('-->  increasing  -->', 1, line = +3, cex = 1.3)
 mtext('latitude', 2, line = 2.5, cex = 2)

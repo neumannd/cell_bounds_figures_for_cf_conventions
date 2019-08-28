@@ -1,6 +1,6 @@
 # Purpose
 
-I suggested to add a few figures to the CF-Conventions' section [7.1 Cell Boundaries](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#cell-boundaries) explaning the order of `bnds` coordinates graphically. This repository holds R scripts to create such graphics.
+I suggested to add a few figures to the CF-Conventions' section [7.1 Cell Boundaries](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#cell-boundaries) explaning the order of `bnds` coordinates graphically. This repository holds R scripts to create such graphics. The discussion on the figures takes/took place in issues [#193](https://github.com/cf-convention/cf-conventions/issues/193) of the CF-Conventions GitHub repository.
 
 
 # Types of graphics
@@ -22,7 +22,7 @@ We have the scripts
 
 This is the plot for case 1D b:
 
-![alt text][pics/case_1D_b.png]
+![alt text](pics/case_1D_b.png)
 
 
 ## 2D case

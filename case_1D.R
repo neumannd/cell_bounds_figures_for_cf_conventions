@@ -72,10 +72,10 @@ points(rep(lon, each = nlat), rep(lat, times = nlon), pch = 18, cex = 2, col = c
 
 # add text ----
 # bnds
-text(lon_bnds[1], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,1)', col = col_grid_text, cex = 1.5)
-text(lon_bnds[2], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,2)', col = col_grid_text, cex = 1.5)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[1], 'lon_bnds(i,1)', col = col_grid_text, cex = 1.5)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[2], 'lon_bnds(i,2)', col = col_grid_text, cex = 1.5)
+text(lon_bnds[1], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,0)', col = col_grid_text, cex = 1.5)
+text(lon_bnds[2], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,1)', col = col_grid_text, cex = 1.5)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[1], 'lon_bnds(i,0)', col = col_grid_text, cex = 1.5)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[2], 'lon_bnds(i,1)', col = col_grid_text, cex = 1.5)
 # grid cell center
 text(lon[1], lat[1] - dlat_text1, 'lon(i)', col = col_cell_text, cex = 1.5)
 text(lon[1] + dlon_text1, lat[1], 'lat(i)', col = col_cell_text, cex = 1.5)

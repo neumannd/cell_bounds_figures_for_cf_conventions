@@ -119,14 +119,14 @@ points(ulon_cell[2], ulat_cell[2], pch = 18, cex = 2, col = col_cell_draw)
 
 # add text ----
 # bnds
-text(ulon_grid_low[4], ulat_grid_low[4] - dlat_text1, 'lon_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 1)
-text(ulon_grid_low[4] - dlon_text1, ulat_grid_low[4], 'lat_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 2)
-text(ulon_grid_low[3], ulat_grid_low[3] - dlat_text1, 'lon_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 1)
-text(ulon_grid_low[3] + dlon_text1, ulat_grid_low[3], 'lat_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 4)
-text(ulon_grid_high[3], ulat_grid_high[3] + dlat_text1, 'lon_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 3)
-text(ulon_grid_high[3] + dlon_text1, ulat_grid_high[3], 'lat_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 4)
-text(ulon_grid_high[4], ulat_grid_high[4] + dlat_text1, 'lon_bnds(i,j,4)', col = col_grid_text, cex = 1.5, pos = 3)
-text(ulon_grid_high[4] - dlon_text1, ulat_grid_high[4], 'lat_bnds(i,j,4)', col = col_grid_text, cex = 1.5, pos = 2)
+text(ulon_grid_low[4], ulat_grid_low[4] - dlat_text1, 'lon_bnds(i,j,0)', col = col_grid_text, cex = 1.5, pos = 1)
+text(ulon_grid_low[4] - dlon_text1, ulat_grid_low[4], 'lat_bnds(i,j,0)', col = col_grid_text, cex = 1.5, pos = 2)
+text(ulon_grid_low[3], ulat_grid_low[3] - dlat_text1, 'lon_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 1)
+text(ulon_grid_low[3] + dlon_text1, ulat_grid_low[3], 'lat_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 4)
+text(ulon_grid_high[3], ulat_grid_high[3] + dlat_text1, 'lon_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 3)
+text(ulon_grid_high[3] + dlon_text1, ulat_grid_high[3], 'lat_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 4)
+text(ulon_grid_high[4], ulat_grid_high[4] + dlat_text1, 'lon_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 3)
+text(ulon_grid_high[4] - dlon_text1, ulat_grid_high[4], 'lat_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 2)
 
 # grid cell center
 text(ulon_cell[2], ulat_cell[2] - dlat_text1, 'lon(i,j)', col = col_cell_text, cex = 1.5, pos = 1)

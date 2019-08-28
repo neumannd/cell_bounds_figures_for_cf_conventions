@@ -64,8 +64,8 @@ col_cell_text = 'green4'
 
 
 # write plot to file
-# png('pics/case_2D_a.png', width = 500, height = 350)
-pdf('pics/case_2D_a.pdf', width = 7, height = 5.2, paper='special')
+png('pics/case_2D_a.png', width = 7, height = 5.2, units='in', res = 300)
+# pdf('pics/case_1D.pdf', width = 7, height = 5.2, paper='special')
 par(mar = c(4.5, 4.5, 1, 1))
 
 

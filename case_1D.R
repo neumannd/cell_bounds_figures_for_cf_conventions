@@ -21,10 +21,10 @@ nlat = length(lat)
 
 
 # colors
-col_grid_draw = 'coral1'
-col_grid_text = 'orangered3'
-col_cell_draw = 'limegreen'
-col_cell_text = 'green4'
+col_grid_draw = '#38598CFF'
+col_grid_text = '#440154FF'
+col_cell_draw = '#8AD647FF'
+col_cell_text = '#8AD647FF'
 
 
 # write plot to file

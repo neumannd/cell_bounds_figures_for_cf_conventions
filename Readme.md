@@ -30,6 +30,16 @@ This is the plot for case 1Db:
 
 ## 2D case
 
+Text CF-Coventions:
+
+```
+In the case where the horizontal grid is described by two-dimensional auxiliary coordinate variables in latitude lat(n,m) and longitude lon(n,m), and the associated cells are four-sided, then the boundary variables are given in the form latbnd(n,m,4) and lonbnd(n,m,4), where the trailing index runs over the four vertices of the cells. Let us call the side of cell (j,i) facing cell (j,i-1) the "i-1" side, the side facing cell (j,i+1) the "i+1" side, and similarly for "j-1" and "j+1". Then we can refer to the vertex formed by sides i-1 and j-1 as (j-1,i-1). With this notation, the four vertices are indexed as follows: 0=(j-1,i-1), 1=(j-1,i+1), 2=(j+1,i+1), 3=(j+1,i-1).
+
+If i-j-upward is a right-handed coordinate system (like lon-lat-upward), this ordering means the vertices will be traversed anticlockwise on the lon-lat surface seen from above. If i-j-upward is left-handed, they will be traversed clockwise on the lon-lat surface.
+
+The bounds can be used to decide whether cells are contiguous via the following relationships. In these equations the variable bnd is used generically to represent either the latitude or longitude boundary variable.
+```
+
 
 We have the scripts
 

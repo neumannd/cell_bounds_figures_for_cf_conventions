@@ -30,7 +30,8 @@ This is the plot for case 1Db:
 
 Text CF-Coventions:
 
-
+> Bounds for 2-D coordinate variables with 4-sided cells  
+>   
 > In the case where the horizontal grid is described by two-dimensional auxiliary coordinate variables in latitude lat(n,m) and longitude lon(n,m), and the associated cells are four-sided, then the boundary variables are given in the form latbnd(n,m,4) and lonbnd(n,m,4), where the trailing index runs over the four vertices of the cells. Let us call the side of cell (j,i) facing cell (j,i-1) the "i-1" side, the side facing cell (j,i+1) the "i+1" side, and similarly for "j-1" and "j+1". Then we can refer to the vertex formed by sides i-1 and j-1 as (j-1,i-1). With this notation, the four vertices are indexed as follows: 0=(j-1,i-1), 1=(j-1,i+1), 2=(j+1,i+1), 3=(j+1,i-1).  
 >   
 > If i-j-upward is a right-handed coordinate system (like lon-lat-upward), this ordering means the vertices will be traversed anticlockwise on the lon-lat surface seen from above. If i-j-upward is left-handed, they will be traversed clockwise on the lon-lat surface.  
@@ -53,6 +54,12 @@ This is the plot for case 2Db:
 
 ## 3D case
 
-TODO or not TODO?
+Text CF-Coventions:
+
+> Bounds for multi-dimensional coordinate variables with p-sided cells  
+>   
+> In all other cases, the bounds should be dimensioned (...,n,p), where (...,n) are the dimensions of the auxiliary coordinate variables, and p the number of vertices of the cells. The vertices must be traversed anticlockwise in the lon-lat plane as viewed from above. The starting vertex is not specified.  
+>   
+> For rectangular grids, two-dimensional cells can be expressed as Cartesian products of one-dimensional cells of the type in the preceding example. However for non-rectangular grids a "rectangular" cell will in general require specifying all four vertices for each cell.
 
 

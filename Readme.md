@@ -22,9 +22,9 @@ We have the scripts
 * `case_1D_b.R`
 * `order_horizontal_bounds__1D_coord_variables.R` (final)
 
-This is the plot for case 1Db:
+This is the latest plot:
 
-![alt text](pics/order_horizontal_bounds__1D_coord_variables.png) (final)
+![alt text](pics/order_horizontal_bounds__1D_coord_variables.png)
 
 
 ## 2D case
@@ -48,9 +48,9 @@ We have the scripts
 * `order_horizontal_bounds__2D_coord_variables.R` (final)
 
 
-This is the plot for case 2Db:
+This is the latest plot:
 
-![alt text](pics/order_horizontal_bounds__2D_coord_variables.png) (final)
+![alt text](pics/order_horizontal_bounds__2D_coord_variables.png)
 
 
 

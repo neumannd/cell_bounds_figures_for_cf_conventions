@@ -64,8 +64,8 @@ col_cell_text = '#8AD647FF'
 
 
 # write plot to file
-png('../pics/case_2D_b.png', width = 7, height = 5.2, units='in', res = 300)
-# pdf('../pics/case_1D.pdf', width = 7, height = 5.2, paper='special')
+# png('../pics/order_horizontal_bounds__2D_coord_variables.png', width = 7, height = 5.2, units='in', res = 300)
+pdf('../pics/order_horizontal_bounds__2D_coord_variables.pdf', width = 7, height = 5.2, paper='special')
 par(mar = c(4.5, 4.5, 1, 1))
 
 
@@ -123,22 +123,22 @@ points(ulon_cell[-3], ulat_cell[-3], pch = 18, cex = 2, col = col_cell_draw)
 
 # add text ----
 # bnds
-text(ulon_grid_low[4], ulat_grid_low[4] - dlat_text1, 'lon_bnds(i,j,0)', col = col_grid_text, cex = 1.5, pos = 1)
-text(ulon_grid_low[4] - dlon_text1, ulat_grid_low[4], 'lat_bnds(i,j,0)', col = col_grid_text, cex = 1.5, pos = 2)
-text(ulon_grid_low[3], ulat_grid_low[3] - dlat_text1, 'lon_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 1)
-# text(ulon_grid_low[3] - dlon_text1, ulat_grid_low[3], 'lat_bnds(i,j,1)', col = col_grid_text, cex = 1.5, pos = 2)
-text(ulon_grid_high[3], ulat_grid_high[3] + dlat_text1, 'lon_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 3)
-text(ulon_grid_high[3] + dlon_text1, ulat_grid_high[3], 'lat_bnds(i,j,2)', col = col_grid_text, cex = 1.5, pos = 4)
-text(ulon_grid_high[4], ulat_grid_high[4] + dlat_text1, 'lon_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 3)
-text(ulon_grid_high[4] - dlon_text1, ulat_grid_high[4], 'lat_bnds(i,j,3)', col = col_grid_text, cex = 1.5, pos = 2)
+text(ulon_grid_low[4], ulat_grid_low[4] - dlat_text1, 'lonbnd(j,i,0)', col = col_grid_text, cex = 1.5, pos = 1)
+text(ulon_grid_low[4] - dlon_text1, ulat_grid_low[4], 'latbnd(j,i,0)', col = col_grid_text, cex = 1.5, pos = 2)
+text(ulon_grid_low[3], ulat_grid_low[3] - dlat_text1, 'lonbnd(j,i,1)', col = col_grid_text, cex = 1.5, pos = 1)
+# text(ulon_grid_low[3] - dlon_text1, ulat_grid_low[3], 'latbnd(j,i,1)', col = col_grid_text, cex = 1.5, pos = 2)
+text(ulon_grid_high[3], ulat_grid_high[3] + dlat_text1, 'lonbnd(j,i,2)', col = col_grid_text, cex = 1.5, pos = 3)
+text(ulon_grid_high[3] + dlon_text1, ulat_grid_high[3], 'latbnd(j,i,2)', col = col_grid_text, cex = 1.5, pos = 4)
+text(ulon_grid_high[4], ulat_grid_high[4] + dlat_text1, 'lonbnd(j,i,3)', col = col_grid_text, cex = 1.5, pos = 3)
+text(ulon_grid_high[4] - dlon_text1, ulat_grid_high[4], 'latbnd(j,i,3)', col = col_grid_text, cex = 1.5, pos = 2)
 
 # grid cell center
-text(ulon_cell[2], ulat_cell[2] - dlat_text1, 'lon(i,j)', col = col_cell_text, cex = 1.5, pos = 1)
-text(ulon_cell[2] + dlon_text1, ulat_cell[2], 'lat(i,j)', col = col_cell_text, cex = 1.5, pos = 4)
-text(ulon_cell[1], ulat_cell[1] - dlat_text1, 'lon(i+1,j)', col = col_cell_text, cex = 1.5, pos = 1)
-text(ulon_cell[1] + dlon_text1, ulat_cell[1], 'lat(i+1,j)', col = col_cell_text, cex = 1.5, pos = 4)
-text(ulon_cell[4], ulat_cell[4] - dlat_text1, 'lon(i,j+1)', col = col_cell_text, cex = 1.5, pos = 1)
-text(ulon_cell[4] + dlon_text1, ulat_cell[4], 'lat(i,j+1)', col = col_cell_text, cex = 1.5, pos = 4)
+text(ulon_cell[2], ulat_cell[2] - dlat_text1, 'lon(j,i)', col = col_cell_text, cex = 1.5, pos = 1)
+text(ulon_cell[2] + dlon_text1, ulat_cell[2], 'lat(j,i)', col = col_cell_text, cex = 1.5, pos = 4)
+text(ulon_cell[1], ulat_cell[1] - dlat_text1, 'lon(j,i+1)', col = col_cell_text, cex = 1.5, pos = 1)
+text(ulon_cell[1] + dlon_text1, ulat_cell[1], 'lat(j,i+1)', col = col_cell_text, cex = 1.5, pos = 4)
+text(ulon_cell[4], ulat_cell[4] - dlat_text1, 'lon(j+1,i)', col = col_cell_text, cex = 1.5, pos = 1)
+text(ulon_cell[4] + dlon_text1, ulat_cell[4], 'lat(j+1,i)', col = col_cell_text, cex = 1.5, pos = 4)
 
 
 # close picture output device

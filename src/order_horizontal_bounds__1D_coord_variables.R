@@ -28,8 +28,8 @@ col_cell_text = '#8AD647FF'
 
 
 # write plot to file
-png('../pics/case_1D_b.png', width = 8, height = 5.2, units='in', res = 300)
-# pdf('../pics/case_1D.pdf', width = 7, height = 5.2, paper='special')
+# png('../pics/order_horizontal_bounds__1D_coord_variables.png', width = 7.5, height = 5.2, units='in', res = 300)
+pdf('../pics/order_horizontal_bounds__1D_coord_variables.pdf', width = 7.5, height = 5.2, paper='special')
 par(mar = c(4.5, 4.5, 1, 6), xpd = TRUE)
 
 
@@ -72,13 +72,13 @@ points(rep(lon, each = nlat), rep(lat, times = nlon), pch = 18, cex = 2, col = c
 
 # add text ----
 # bnds
-text(lon_bnds[1], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,0)', col = col_grid_text, cex = 1.5, pos = 3)
-text(lon_bnds[2], lat_bnds[nlat+1] + dlat_text2, 'lon_bnds(i,1)', col = col_grid_text, cex = 1.5, pos = 3)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[1], 'lat_bnds(i,0)', col = col_grid_text, cex = 1.5, pos = 4)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[2], 'lat_bnds(i,1)', col = col_grid_text, cex = 1.5, pos = 4)
+text(lon_bnds[1], lat_bnds[nlat+1] + dlat_text2, 'lonbnd(i,0)', col = col_grid_text, cex = 1.5, pos = 3)
+text(lon_bnds[2], lat_bnds[nlat+1] + dlat_text2, 'lonbnd(i,1)', col = col_grid_text, cex = 1.5, pos = 3)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[1], 'latbnd(j,0)', col = col_grid_text, cex = 1.5, pos = 4)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[2], 'latbnd(j,1)', col = col_grid_text, cex = 1.5, pos = 4)
 # grid cell center
 text(lon[1], lat[1] - dlat_text1, 'lon(i)', col = col_cell_text, cex = 1.5)
-text(lon[1] + dlon_text1, lat[1], 'lat(i)', col = col_cell_text, cex = 1.5)
+text(lon[1] + dlon_text1, lat[1], 'lat(j)', col = col_cell_text, cex = 1.5)
 
 
 # add legend ----
@@ -89,8 +89,8 @@ text(lon[1] + dlon_text1, lat[1], 'lat(i)', col = col_cell_text, cex = 1.5)
 #        inset = c(-0.2, 0.0))
 rect(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*0.5, lon_bnds[nlon+1] + dlon_text2*4, lat_bnds[nlat+1] + dlat_text2*1.51)
 text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*1.3, 'with:', col = col_grid_text, cex = 1.3, pos = 4, font = 2)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*1.0, 'lon_bnds(i,0) <= lon_bnds(i,1)', col = col_grid_text, cex = 1.3, pos = 4)
-text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*0.7, 'lat_bnds(i,0) <= lat_bnds(i,1)', col = col_grid_text, cex = 1.3, pos = 4)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*1.0, 'lonbnd(i,0) <= lonbnd(i,1)', col = col_grid_text, cex = 1.3, pos = 4)
+text(lon_bnds[nlon+1] + dlon_text2, lat_bnds[nlat+1] + dlat_text2*0.7, 'latbnd(j,0) <= latbnd(j,1)', col = col_grid_text, cex = 1.3, pos = 4)
 
 
 # close picture output device

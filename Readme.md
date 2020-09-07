@@ -18,12 +18,13 @@ Text CF-Coventions:
 
 We have the scripts
 
-* case_1D_a.R
-* case_1D_b.R
+* `case_1D_a.R`
+* `case_1D_b.R`
+* `order_horizontal_bounds__1D_coord_variables.R` (final)
 
 This is the plot for case 1Db:
 
-![alt text](pics/case_1D_b.png)
+![alt text](pics/order_horizontal_bounds__1D_coord_variables.png) (final)
 
 
 ## 2D case
@@ -41,14 +42,15 @@ Text CF-Coventions:
 
 We have the scripts
 
-* case_2D_a.R
-* case_2D_b.R
-* case_2D_c.R
+* `case_2D_a.R`
+* `case_2D_b.R`
+* `case_2D_c.R`
+* `order_horizontal_bounds__2D_coord_variables.R` (final)
 
 
 This is the plot for case 2Db:
 
-![alt text](pics/case_2D_b.png)
+![alt text](pics/order_horizontal_bounds__2D_coord_variables.png) (final)
 
 
 

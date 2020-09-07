@@ -1,0 +1,4 @@
+[[img-1d_coords, figure 1]]
+[.text-center]
+.Order of **`lonbnd(i,0)`** and **`lonbnd(i,1)`** as well as of **`latbnd(i,0)`** and **`latbnd(i,1)`** in the case of one-dimensional horizontal coordinate axes. Tuples **`(lon(i,j),lat(i,j))`** represent grid cell centers. The four grid cell vertices are given by **`(lonbnd(i,j,0),latbnd(i,j,0))`**, **`(lonbnd(i,j,1),latbnd(i,j,0))`**, **`(lonbnd(i,j,1),latbnd(i,j,1))`** and **`(lonbnd(i,j,0),latbnd(i,j,1))`**.
+image::images/order_horizontal_bounds__1D_coord_variables.png[,50%,pdfwidth=50vw,align="center"]

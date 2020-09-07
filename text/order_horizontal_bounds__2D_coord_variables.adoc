@@ -1,0 +1,4 @@
+[[img-2d_coords, figure 2]]
+[.text-center]
+.Order of **`lonbnd(i,j,0)`** to **`lonbnd(i,j,3)`** and of **`latbnd(i,j,0)`** and **`latbnd(i,j,3)`** in the case of two-dimensional horizontal coordinate axes. Tuples **`(lon(i,j),lat(i,j))`** represent grid cell centers and tuples **`(lonbnd(i,j,n),latbnd(i,j,n))`** represent the grid cell vertices.
+image::images/order_horizontal_bounds__2D_coord_variables.png[,50%,pdfwidth=50vw,align="center"]
